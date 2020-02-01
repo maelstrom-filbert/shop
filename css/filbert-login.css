@@ -1,0 +1,47 @@
+.h3 {
+  color:#fff;
+  font-size:2em;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+}
+
+.login-container {
+  max-width: 400px;
+}
+
+.logout-button {
+  background-color: #af4c4c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logout-button:hover {
+  opacity: 0.8;
+}

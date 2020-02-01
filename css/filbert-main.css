@@ -1,0 +1,40 @@
+@import "filbert-colors.css";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+  background: var(--backdrop-color);
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size:30px;
+  }
+  .not-on-mobile {
+    display: none;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  h1 {
+    font-size:60px;
+  }
+  .not-on-mobile {
+    display: none;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  h1 {
+    font-size:90px;
+  }
+  .not-on-mobile {
+    display: block;
+  }
+}

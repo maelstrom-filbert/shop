@@ -1,0 +1,72 @@
+@import "filbert-colors.css";
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tabs {
+  position: relative;
+  background: var(--main-color);
+  z-index: 1;
+}
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  background: var(--main-color);
+  border-right: 0.125rem solid var(--main-color-dark);
+  color: var(--main-color-text-color);
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+}
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+.tab-content {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 2.75em;
+  left: 0;
+  padding: 1.618rem;
+  background: var(--bg-color);
+  color: var(--backdrop-color);
+  border-bottom: 0.25rem solid #bdc3c7;
+  opacity: 0;
+  transition: all 0.35s;
+}
+.tab-switch:checked + .tab-label {
+  background: var(--bg-color);
+  color: var(--backdrop-color);
+  border-bottom: 0;
+  border-right: 0.125rem solid var(--bg-color);
+  transition: all 0.35s;
+  z-index: 2;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  z-index: 3;
+  opacity: 1;
+  transition: all 0.35s;
+}
