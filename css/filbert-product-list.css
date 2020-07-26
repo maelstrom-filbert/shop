@@ -1,95 +1,18 @@
 @import "filbert-colors.css";
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
   margin: auto;
   text-align: center;
-  background-color: ddd;
 }
 
 .price {
   color: grey;
-  font-size: 22px;
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 2px;
 }
 
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: var(--main-color);
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-
-.basket-item {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border: none;
-  outline: 0;
-  background-color: ddd;
-  width: 100%;
-}
-
-.basket-item button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  width: 120px;
-  font-size: 18px;
-}
-
-.basket-item button:hover {
-  opacity: 0.7;
-}
-
-.basket-remove {
-  background-color: #af4c4c;
-}
-
-.basket-buy-now {
-  background-color: #4CAF50;
-}
-
-.basket-order {
-  background-color: var(--main-color);
-}
-
-.basket-item a {
-  font-size: 22px;
-  padding-left: 20px;
-}
-
-.orders-table {
-  width: 100%;
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.card h2{
+  margin: 0px;
   padding: 0px;
-  border: 0px;
-}
-
-td, th {
-  border: 1px solid #ddd;
-  text-align: left;
-  padding: 8px;
-  border: none;
-  border: 0px;
-}
-
-th {
-  color: white;
-  background-color: var(--main-color);
-}
-
-tr:nth-child(even) {
-  background-color: #eee;
 }
