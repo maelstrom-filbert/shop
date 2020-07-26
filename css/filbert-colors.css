@@ -1,6 +1,12 @@
 :root {
-  --bg-color: #eee;
+  /*--bg-color: #eee;
   --backdrop-color: #2c3e50;
+  --main-color: #2A628F;
+  --main-color-dark: #235278;
+  --main-color-text-color: white;*/
+  
+  --bg-color: #eee;
+  --backdrop-color: #E0E0E0;
   --main-color: #2A628F;
   --main-color-dark: #235278;
   --main-color-text-color: white;
