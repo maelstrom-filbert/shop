@@ -1,12 +1,12 @@
 var products = [
 {"species" : "argentavis", "breedable" : false, "breedablePrice" : 0, "price" : 1500, "image" : "Argentavis260.png"},
 {"species" : "direwolf", "breedable" : true, "breedablePrice" : 20000, "price" : 2000, "image" : "DirewolfWHITE.png"},
+	{"species" : "therizinosaur", "breedable" : false, "breedablePrice" : 0, "price" : 1500, "image" : "TherizinosaurFeather.png"},
 {"species" : "argentavis", "breedable" : false, "breedablePrice" : 0, "price" : 1500, "image" : "ArgentavisGREEN.png"},
 {"species" : "argentavis", "breedable" : false, "breedablePrice" : 0, "price" : 1500, "image" : "ArgentavisRED.png"},
 {"species" : "argentavis", "breedable" : false, "breedablePrice" : 0, "price" : 1500, "image" : "ArgentavisPASTEL.png"},
 {"species" : "direwolf", "breedable" : false, "breedablePrice" : 0, "price" : 2000, "image" : "DirewolfRED.png"},
-{"species" : "direwolf", "breedable" : false, "breedablePrice" : 0, "price" : 2000, "image" : "DirewolfCYAN.png"},
-{"species" : "therizinosaur", "breedable" : false, "breedablePrice" : 0, "price" : 1500, "image" : "TherizinosaurFeather.png"}
+{"species" : "direwolf", "breedable" : false, "breedablePrice" : 0, "price" : 2000, "image" : "DirewolfCYAN.png"}
 ];
 
 
