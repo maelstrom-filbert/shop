@@ -1,90 +1,46 @@
-<link rel="stylesheet" href="css/filbert-main.css">
-<link rel="stylesheet" href="css/filbert-tabs.css">
-<link rel="stylesheet" href="css/filbert-hero-image.css">
 <link rel="stylesheet" href="css/filbert-filter.css">
-<link rel="stylesheet" href="css/filbert-login.css">
+<link rel="stylesheet" href="css/filbert-hero-image.css">
 <link rel="stylesheet" href="css/filbert-product-list.css">
-<link rel="stylesheet" href="css/filbert-zoom-on-hover.css">
-<link rel="stylesheet" href="css/filbert-toast.css">
+<link rel="stylesheet" href="css/filbert-colors.css">
+<link rel="stylesheet" href="css/filbert-main.css">
 <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
 
 <html lang="en">
   <head>
 
   </head>
   <body>
-
-    <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/bg_1.jpg');">
+	
+	<div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/bg_1.jpg');">
       <div class="hero-text">
         <h1 style="font-family: 'Sacramento';">Shop Filbert</h1>
-        <p class="not-on-mobile" style="font-family: 'Sacramento'; font-size:30px;">— One stop dino shop —</p>
+        <p class="not-on-mobile" style="font-family: 'Sacramento'; font-size:30px;">One stop dino shop</p>
       </div>
     </div>
-
-    <div class="tabs">
-	<!--
-      <div class="tab">
-        <input type="radio" name="css-tabs" id="tab-0" class="tab-switch">
-        <label for="tab-0" class="tab-label unselectable">User Account</label>
-        <div class="tab-content">
-			<div class="login-container" id="login-container">
-			  <input type="text" placeholder="Enter Login String" name="uname" id="uname" required>
-			  <button class="login-button" type="submit" onclick="login()">Login</button>
-			</div>
-			<div class="login-container" id="logout-container" style="display:none;">
-			  <h2 id="uname-text"></h2>
-			  <button class="logout-button" type="submit" onclick="logout()">Logout</button>
-			</div>
-        </div>
-      </div>
-      <div class="tab">
-        <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-        <label for="tab-1" class="tab-label unselectable">Home</label>
-        <div class="tab-content">Welcome to Shop Filbert. We sell dinos on Maelstrom Ark servers! This is our shop's portal so that players can see our full catalog without having to even step foot in our shop! Don't let our professionalism confuse you, we only charge in-game currency.</div>
-      </div>-->
-      <div class="tab">
-        <input type="radio" name="css-tabs" id="tab-2" checked class="tab-switch">
-        <label for="tab-2" class="tab-label unselectable">Products</label>
-        <div class="tab-content">
-          <div id="myBtnContainer">
-            <button class="filterButton active" onclick="filterSelection('all')">Show all</button>
-            <button class="filterButton" onclick="filterSelection('breedable-true')">Breedable</button>
-            <button class="filterButton" onclick="filterSelection('breedable-false')">Non-Breedable</button>
-            <button class="filterButton" onclick="filterSelection('argentavis')">Argentavis</button>
-            <button class="filterButton" onclick="filterSelection('direwolf')">Direwolf</button>
-            <button class="filterButton" onclick="filterSelection('equus')">Equus</button>
-            <button class="filterButton" onclick="filterSelection('gacha')">Gacha</button>
-            <button class="filterButton" onclick="filterSelection('griffin')">Griffin</button>
-            <button class="filterButton" onclick="filterSelection('monkey')">Monkey</button>
-            <button class="filterButton" onclick="filterSelection('pteranodon')">Pteranodon</button>
-            <button class="filterButton" onclick="filterSelection('elemental')">Rock Elemental</button>
-            <button class="filterButton" onclick="filterSelection('owl')">Snow Owl</button>
-            <button class="filterButton" onclick="filterSelection('therizinosaur')">Therizinosaur</button>
-            <button class="filterButton" onclick="filterSelection('thylacoleo')">Thylacoleo</button>
-            <button class="filterButton" onclick="filterSelection('wyvern')">Wyvern</button>
-          </div>
-          <div class="filterContainer" id="productList">
-          </div>
-        </div>
-      </div>
-      <div class="tab">
-        <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
-        <label id="tab-3-label" style="display:none;" for="tab-3" class="tab-label unselectable">Orders</label>
-        <div class="tab-content" id="orders-tab">
-
-        </div>
-      </div>
-      <div class="tab">
-        <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
-        <label id="tab-4-label" style="display:none;" for="tab-4" class="tab-label unselectable">Purchase History</label>
-        <div class="tab-content">Coming soon</div>
-      </div>
-    </div>
+	
+	<div style="margin: 5px">
+	<div id="myBtnContainer">
+	  <button class="filterButton active" onclick="filterSelection('all')">Show all</button>
+	  <button class="filterButton" onclick="filterSelection('breedable-true')">Breedable</button>
+	  <button class="filterButton" onclick="filterSelection('breedable-false')">Non-Breedable</button>
+	  <button class="filterButton" onclick="filterSelection('argentavis')">Argentavis</button>
+	  <button class="filterButton" onclick="filterSelection('direwolf')">Direwolf</button>
+	  <!--<button class="filterButton" onclick="filterSelection('equus')">Equus</button>
+	  <button class="filterButton" onclick="filterSelection('gacha')">Gacha</button>-->
+	  <button class="filterButton" onclick="filterSelection('griffin')">Griffin</button>
+	  <!--<button class="filterButton" onclick="filterSelection('pteranodon')">Pteranodon</button>
+	  <button class="filterButton" onclick="filterSelection('elemental')">Rock Elemental</button>
+	  <button class="filterButton" onclick="filterSelection('owl')">Snow Owl</button>
+	  <button class="filterButton" onclick="filterSelection('therizinosaur')">Therizinosaur</button>-->
+	</div>
+	<div class="filterContainer" id="productList">
+	</div>
+	</div>
+	
   </body>
 
-  <script src="js/filbert-firebase.js"></script>
+  <script src="js/filbert-products.js"></script>
   <script src="js/filbert-filter.js"></script>
   <script>
     setTimeout(function() {   filterSelection("all"); }, 500);
