@@ -28,7 +28,6 @@ var products = [
 {"species" : "wyvern", "breedable" : false, "breedablePrice" : 0, "price" : 30000, "image" : "Fire05.png"},
 {"species" : "wyvern", "breedable" : false, "breedablePrice" : 0, "price" : 200000, "image" : "Fire06.png"},
 {"species" : "wyvern", "breedable" : false, "breedablePrice" : 0, "price" : 100000, "image" : "Fire07.png"},
-{"species" : "wyvern", "breedable" : false, "breedablePrice" : 0, "price" : 30000, "image" : "Ice02.png"},
 {"species" : "wyvern", "breedable" : false, "breedablePrice" : 0, "price" : 30000, "image" : "Ice03.png"},
 {"species" : "wyvern", "breedable" : false, "breedablePrice" : 0, "price" : 200000, "image" : "Ice04.png"},
 {"species" : "wyvern", "breedable" : false, "breedablePrice" : 0, "price" : 200000, "image" : "Ice05.png"},
