@@ -81,7 +81,7 @@ function loadProducts() {
 		 //"https://raw.githubusercontent.com/maelstrom-filbert/shop/master/images/" + product.image +
 		 "images/" + product.image +
 		 "' style='width:100%'></div>" +
-		 "<p class='price'>" + numberWithCommas(product.price) + " Ingots</p>" +
+		 "<p class='price'>" + numberWithCommas(product.price) + " Ingots (non-breedable)</p>" +
 		 "<p class='price'>" + numberWithCommas(product.breedablePrice) + " Ingots (breedable)</p>";
 		}
 	  
